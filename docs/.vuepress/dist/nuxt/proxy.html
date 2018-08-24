@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>踩坑指南 | 配置代理解决跨域</title>
+    <meta name="description" content="一个基于vuePress快速成型的笔记整理站点">
+    
+    
+    <link rel="preload" href="/assets/css/9.styles.77057a7e.css" as="style"><link rel="preload" href="/assets/js/app.ea5d89d8.js" as="script"><link rel="preload" href="/assets/js/0.00fd0030.js" as="script"><link rel="prefetch" href="/assets/js/3.4a068fe4.js"><link rel="prefetch" href="/assets/js/1.158a12f5.js"><link rel="prefetch" href="/assets/js/2.090f88e8.js"><link rel="prefetch" href="/assets/js/4.c1ac4684.js"><link rel="prefetch" href="/assets/js/5.e9027273.js"><link rel="prefetch" href="/assets/js/6.ceac27a3.js"><link rel="prefetch" href="/assets/js/7.ae89ab12.js"><link rel="prefetch" href="/assets/js/8.c3f650ec.js">
+    <link rel="stylesheet" href="/assets/css/9.styles.77057a7e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      踩坑指南
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/nuxt/" class="nav-link router-link-active">nuxt</a></div><div class="nav-item"><a href="/es6/" class="nav-link">ES Next</a></div><a href="https://github.com/warriorBrian" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/nuxt/" class="nav-link router-link-active">nuxt</a></div><div class="nav-item"><a href="/es6/" class="nav-link">ES Next</a></div><a href="https://github.com/warriorBrian" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><a href="/nuxt/" class="sidebar-link">Nuxt.js</a></li><li><a href="/nuxt/path.html" class="sidebar-link">路径匹配</a></li><li><a href="/nuxt/loading.html" class="sidebar-link">按需加载</a></li><li><a href="/nuxt/binding.html" class="sidebar-link">插件中获取vue绑定</a></li><li><a href="/nuxt/proxy.html" class="active sidebar-link">配置代理解决跨域</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/nuxt/proxy.html#原始配置代理方式" class="sidebar-link">原始配置代理方式</a></li><li class="sidebar-sub-header"><a href="/nuxt/proxy.html#更简便的代理方式" class="sidebar-link">更简便的代理方式</a></li><li class="sidebar-sub-header"><a href="/nuxt/proxy.html#nuxtjs-axios的配置项" class="sidebar-link">@nuxtjs/axios的配置项</a></li></ul></li><li><a href="/nuxt/deploy.html" class="sidebar-link">部署方式</a></li></ul></div><div class="page"><div class="content"><h1 id="配置代理解决跨域"><a href="#配置代理解决跨域" aria-hidden="true" class="header-anchor">#</a> 配置代理解决跨域</h1><p>我们知道在vue-cli中配置代理很方便，只需要在config/目录下的index.js中找到proxyTable添加即可，而在<code>nuxt</code>中同样需要修改<code>nuxt.config.js</code>配置文件。</p><h2 id="原始配置代理方式"><a href="#原始配置代理方式" aria-hidden="true" class="header-anchor">#</a> 原始配置代理方式</h2><p>使用<code>@nuxtjs/axios</code>和<code>@nuxtjs/proxy</code>进行代理解决跨域</p><h3 id="_1-下载插件"><a href="#_1-下载插件" aria-hidden="true" class="header-anchor">#</a> 1.下载插件</h3><pre class="language-text"><code>#下载插件
+npm install @nuxtjs/axios --save
+#下载依赖代理
+npm install @nuxtjs/proxy --save
+</code></pre><h3 id="_2-配置插件"><a href="#_2-配置插件" aria-hidden="true" class="header-anchor">#</a> 2.配置插件</h3><p>在<code>nuxt.config.js</code>添加配置项：<code>modules</code>和<code>proxy</code>。</p><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+    modules<span class="token punctuation">:</span><span class="token punctuation">[</span>
+        <span class="token string">'@nuxtjs/axios'</span><span class="token punctuation">,</span>
+        <span class="token string">'@nuxtjs/proxy'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    proxy<span class="token punctuation">:</span><span class="token punctuation">[</span>
+        <span class="token punctuation">[</span><span class="token string">'/json.html'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>target<span class="token punctuation">:</span><span class="token string">'http://www.xxxx.com'</span><span class="token punctuation">}</span><span class="token punctuation">]</span>    <span class="token comment">//注意这也是一个数组</span>
+    <span class="token punctuation">]</span>
+
+<span class="token punctuation">}</span>
+</code></pre><p>按照上面的方式已经完成了代理，可以进行跨域请求了。</p><h2 id="更简便的代理方式"><a href="#更简便的代理方式" aria-hidden="true" class="header-anchor">#</a> 更简便的代理方式</h2><h3 id="_1-下载插件-2"><a href="#_1-下载插件-2" aria-hidden="true" class="header-anchor">#</a> 1.下载插件</h3><p>这次只需要下载<code>@nuxtjs/axios</code>插件就可以完成。</p><pre class="language-text"><code># 下载插件
+npm install @nuxtjs/axios --save
+</code></pre><h3 id="_2-配置插件-2"><a href="#_2-配置插件-2" aria-hidden="true" class="header-anchor">#</a> 2.配置插件</h3><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+  modules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'@nuxtjs/axios'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  axios<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    proxy<span class="token punctuation">:</span><span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  proxy<span class="token punctuation">:</span><span class="token punctuation">{</span>
+    <span class="token string">'/api'</span><span class="token punctuation">:</span> <span class="token string">'http://api.example.com'</span><span class="token punctuation">,</span>
+    <span class="token string">'/api2'</span><span class="token punctuation">:</span> <span class="token string">'http://api.another-website.com'</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>特别注意：此时，<code>axios</code>选项为对象(<code>object</code>)，<code>proxy</code>选项为对象(<code>object</code>)。</p></div><h2 id="nuxtjs-axios的配置项"><a href="#nuxtjs-axios的配置项" aria-hidden="true" class="header-anchor">#</a> @nuxtjs/axios的配置项</h2><h3 id="pathrewrite选项-重写地址"><a href="#pathrewrite选项-重写地址" aria-hidden="true" class="header-anchor">#</a><code>pathRewrite</code>选项(重写地址)</h3><p>如果配置<code>pathRewrite</code>选项，可以采用第二种写法如下：</p><pre class="language-js"><code>proxy<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+<span class="highlighted-line">  <span class="token string">'/api/'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> target<span class="token punctuation">:</span> <span class="token string">'http://api.example.com'</span><span class="token punctuation">,</span> pathRewrite<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">'^/api/'</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">}</span> <span class="token punctuation">}</span></span> <span class="token punctuation">}</span>
+</code></pre><p><code>/api/</code>将被添加到API端点的所有请求中。可以使用<code>pathRewrite</code>选项删除。</p><p>因为在 ajax 的 url 中加了前缀 <code>/api</code>，而原本的接口是没有这个前缀的。</p><p>所以需要通过 <strong>pathRewrite</strong> 来重写地址，将前缀 <code>/api</code> 转为 <code>/</code>或者是<code>''</code>。</p><p>如果本身的接口地址就有 <code>/api</code> 这种通用前缀，就可以把 <code>pathRewrite</code> 删掉。</p><h3 id="retry选项-自动拦截失败请求"><a href="#retry选项-自动拦截失败请求" aria-hidden="true" class="header-anchor">#</a><code>retry</code>选项(自动拦截失败请求)</h3><p>可以在<code>axios</code>选项中，配置<code>retry</code>配置项，自动拦截失败请求，<strong>默认为3次</strong>。</p><pre class="language-js"><code>axios<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  retry<span class="token punctuation">:</span> <span class="token punctuation">{</span> retries<span class="token punctuation">:</span> <span class="token number">3</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="progress选项-发出请求时显示加载栏"><a href="#progress选项-发出请求时显示加载栏" aria-hidden="true" class="header-anchor">#</a><code>progress</code>选项(发出请求时显示加载栏)</h3><p>与<code>Nuxt.js</code>进度条集成，在发出请求时显示加载栏。<strong>（仅在浏览器上，当加载栏可用时。）</strong></p><p>您还可以使用<code>progress</code>配置为每个请求禁用进度条。</p><pre class="language-js"><code><span class="token keyword">this</span><span class="token punctuation">.</span>$axios<span class="token punctuation">.</span>$<span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'URL'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> progress<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><h3 id="baseurl选项（服务器端默认请求地址）"><a href="#baseurl选项（服务器端默认请求地址）" aria-hidden="true" class="header-anchor">#</a><code>baseURL</code>选项（服务器端默认请求地址）</h3><p>在服务器端使用和预先创建请求的基本URL。</p><h3 id="browserbaseurl选项（客户端默认请求地址）"><a href="#browserbaseurl选项（客户端默认请求地址）" aria-hidden="true" class="header-anchor">#</a><code>browserBaseURL</code>选项（客户端默认请求地址）</h3><p>在客户端使用和预先创建请求的基本URL。</p></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/nuxt/binding.html" class="prev">
+          插件中获取vue绑定
+        </a></span><span class="next"><a href="/nuxt/deploy.html">
+          部署方式
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/0.00fd0030.js" defer></script><script src="/assets/js/app.ea5d89d8.js" defer></script>
+  </body>
+</html>

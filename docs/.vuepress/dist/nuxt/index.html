@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>踩坑指南 | Nuxt.js</title>
+    <meta name="description" content="一个基于vuePress快速成型的笔记整理站点">
+    
+    
+    <link rel="preload" href="/assets/css/9.styles.77057a7e.css" as="style"><link rel="preload" href="/assets/js/app.ea5d89d8.js" as="script"><link rel="preload" href="/assets/js/5.e9027273.js" as="script"><link rel="prefetch" href="/assets/js/3.4a068fe4.js"><link rel="prefetch" href="/assets/js/0.00fd0030.js"><link rel="prefetch" href="/assets/js/1.158a12f5.js"><link rel="prefetch" href="/assets/js/2.090f88e8.js"><link rel="prefetch" href="/assets/js/4.c1ac4684.js"><link rel="prefetch" href="/assets/js/6.ceac27a3.js"><link rel="prefetch" href="/assets/js/7.ae89ab12.js"><link rel="prefetch" href="/assets/js/8.c3f650ec.js">
+    <link rel="stylesheet" href="/assets/css/9.styles.77057a7e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      踩坑指南
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/nuxt/" class="nav-link router-link-exact-active router-link-active">nuxt</a></div><div class="nav-item"><a href="/es6/" class="nav-link">ES Next</a></div><a href="https://github.com/warriorBrian" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/nuxt/" class="nav-link router-link-exact-active router-link-active">nuxt</a></div><div class="nav-item"><a href="/es6/" class="nav-link">ES Next</a></div><a href="https://github.com/warriorBrian" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><a href="/nuxt/" class="active sidebar-link">Nuxt.js</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/nuxt/#什么是nuxt-js？" class="sidebar-link">什么是Nuxt.js？</a></li><li class="sidebar-sub-header"><a href="/nuxt/#起步" class="sidebar-link">起步</a></li><li class="sidebar-sub-header"><a href="/nuxt/#express模板初始化" class="sidebar-link">express模板初始化</a></li><li class="sidebar-sub-header"><a href="/nuxt/#koa2模板初始化" class="sidebar-link">Koa2模板初始化</a></li><li class="sidebar-sub-header"><a href="/nuxt/#全部模板初始化列表" class="sidebar-link">全部模板初始化列表</a></li><li class="sidebar-sub-header"><a href="/nuxt/#声明" class="sidebar-link">声明</a></li></ul></li><li><a href="/nuxt/path.html" class="sidebar-link">路径匹配</a></li><li><a href="/nuxt/loading.html" class="sidebar-link">按需加载</a></li><li><a href="/nuxt/binding.html" class="sidebar-link">插件中获取vue绑定</a></li><li><a href="/nuxt/proxy.html" class="sidebar-link">配置代理解决跨域</a></li><li><a href="/nuxt/deploy.html" class="sidebar-link">部署方式</a></li></ul></div><div class="page"><div class="content"><h1 id="nuxt-js"><a href="#nuxt-js" aria-hidden="true" class="header-anchor">#</a> Nuxt.js</h1><p><img src="/assets/img/nuxt.2296d569.png" alt="nuxt.js"></p><h2 id="什么是nuxt-js？"><a href="#什么是nuxt-js？" aria-hidden="true" class="header-anchor">#</a> 什么是Nuxt.js？</h2><p>Nuxt.js 是一个基于 Vue.js 的通用应用框架。</p><p>通过对客户端/服务端基础架构的抽象组织，Nuxt.js 主要关注的是应用的 <strong>UI渲染</strong>。</p><p>我们的目标是创建一个灵活的应用框架，你可以基于它初始化新项目的基础结构代码，或者在已有 Node.js 项目中使用 Nuxt.js。</p><p>Nuxt.js 预设了利用Vue.js开发<strong>服务端渲染</strong>的应用所需要的各种配置。</p><p>除此之外，我们还提供了一种命令叫：nuxt generate，为基于 Vue.js 的应用提供生成对应的静态站点的功能。</p><p>我们相信这个命令所提供的功能，是向开发集成各种微服务（microservices）的 Web 应用迈开的新一步。</p><p>作为框架，Nuxt.js 为 客户端/服务端 这种典型的应用架构模式提供了许多有用的特性，例如异步数据加载、中间件支持、布局支持等。</p><h2 id="起步"><a href="#起步" aria-hidden="true" class="header-anchor">#</a> 起步</h2><h3 id="安装nuxt-基础模板"><a href="#安装nuxt-基础模板" aria-hidden="true" class="header-anchor">#</a> 安装nuxt(基础模板)</h3><pre class="language-text"><code>npm install vue-cli
+</code></pre><p>通过vue-cli来安装nuxt的基础模板</p><pre class="language-text"><code>vue init nuxt/starter template
+</code></pre><p>也可以是这样的：</p><pre class="language-text"><code>vue init nuxt-community/starter-template &lt;project-name&gt;
+</code></pre><p>接着通过一下命令启动项目：</p><pre class="language-text"><code>$ npm run dev
+</code></pre><p>应用现在运行在<code>http://localhost:3000</code></p><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>注意：Nuxt.js会监听<code>pages</code>目录中的文件变更并启动，当添加新页面时没有必要手动重启。
+<strong>而我们在修改<code>nuxt.config.js</code>等其他配置文件则需要手动重启。</strong></p></div><h2 id="express模板初始化"><a href="#express模板初始化" aria-hidden="true" class="header-anchor">#</a> express模板初始化</h2><h3 id="使用express初始化模板"><a href="#使用express初始化模板" aria-hidden="true" class="header-anchor">#</a> 使用<code>express</code>初始化模板</h3><pre class="language-text"><code>vue init nuxt/express &lt;project-name&gt;
+</code></pre><p>通过以上方式进行初始化，会发现比<strong>基础模板</strong>多了一个<code>server/</code>文件夹。</p><p>而这个文件夹也是至关重要的</p><pre class="language-text"><code>.
+├─ server/
+│  ├─ api/
+│  │   ├─ index.js
+│  │   └─ users.js
+│  └─ index.js
+<span class="highlighted-line">└─ build/</span><span class="highlighted-line">    ├─ main.js</span><span class="highlighted-line">    └─ main.map</span></code></pre><p>代码高亮的部分是<code>npm run build</code>打包以后生成的文件夹，而上面的<code>server/</code>文件夹是初始化官方配置好的，里面包含了服务器端渲染的配置，以下是<code>server/ index.js</code>文件：</p><pre class="language-js"><code><span class="token keyword">import</span> express <span class="token keyword">from</span> <span class="token string">'express'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Nuxt<span class="token punctuation">,</span> Builder <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'nuxt'</span>
+
+<span class="token keyword">import</span> api <span class="token keyword">from</span> <span class="token string">'./api'</span>
+
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> host <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">HOST</span> <span class="token operator">||</span> <span class="token string">'127.0.0.1'</span>
+<span class="token keyword">const</span> port <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">PORT</span> <span class="token operator">||</span> <span class="token number">3000</span>
+
+app<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">'port'</span><span class="token punctuation">,</span> port<span class="token punctuation">)</span>
+
+<span class="token comment">// Import API Routes</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/api'</span><span class="token punctuation">,</span> api<span class="token punctuation">)</span>
+
+<span class="token comment">// Import and Set Nuxt.js options</span>
+<span class="token keyword">let</span> config <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../nuxt.config.js'</span><span class="token punctuation">)</span>
+config<span class="token punctuation">.</span>dev <span class="token operator">=</span> <span class="token operator">!</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">'production'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// Init Nuxt.js</span>
+<span class="token keyword">const</span> nuxt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Nuxt</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span>
+
+<span class="token comment">// Build only in dev mode</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>config<span class="token punctuation">.</span>dev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> builder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Builder</span><span class="token punctuation">(</span>nuxt<span class="token punctuation">)</span>
+  builder<span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Give nuxt middleware to express</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>nuxt<span class="token punctuation">.</span>render<span class="token punctuation">)</span>
+
+<span class="token comment">// Listen the server</span>
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>port<span class="token punctuation">,</span> host<span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Server listening on '</span> <span class="token operator">+</span> host <span class="token operator">+</span> <span class="token string">':'</span> <span class="token operator">+</span> port<span class="token punctuation">)</span> <span class="token comment">// eslint-disable-line no-console</span>
+</code></pre><h2 id="koa2模板初始化"><a href="#koa2模板初始化" aria-hidden="true" class="header-anchor">#</a> Koa2模板初始化</h2><h3 id="使用koa2初始化模板"><a href="#使用koa2初始化模板" aria-hidden="true" class="header-anchor">#</a> 使用<code>Koa2</code>初始化模板</h3><pre class="language-text"><code>vue init nuxt/koa &lt;project-name&gt;
+</code></pre><p>同样使用<code>koa2</code>初始化，会比<strong>基础模板</strong>多一个<code>server/</code>文件夹。</p><p>对比<code>express</code>模板的<code>index.js</code>文件，<code>koa2</code>模板更贴近ES Nuxt(ES6、ES7、ES8)：</p><pre class="language-js"><code><span class="token keyword">import</span> Koa <span class="token keyword">from</span> <span class="token string">'koa'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Nuxt<span class="token punctuation">,</span> Builder <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'nuxt'</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">start</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Koa</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> host <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">HOST</span> <span class="token operator">||</span> <span class="token string">'127.0.0.1'</span>
+  <span class="token keyword">const</span> port <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">PORT</span> <span class="token operator">||</span> <span class="token number">3000</span>
+
+  <span class="token comment">// Import and Set Nuxt.js options</span>
+  <span class="token keyword">let</span> config <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../nuxt.config.js'</span><span class="token punctuation">)</span>
+  config<span class="token punctuation">.</span>dev <span class="token operator">=</span> <span class="token operator">!</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>env <span class="token operator">===</span> <span class="token string">'production'</span><span class="token punctuation">)</span>
+
+  <span class="token comment">// Instantiate nuxt.js</span>
+  <span class="token keyword">const</span> nuxt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Nuxt</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span>
+
+  <span class="token comment">// Build in development</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>config<span class="token punctuation">.</span>dev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> builder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Builder</span><span class="token punctuation">(</span>nuxt<span class="token punctuation">)</span>
+    <span class="token keyword">await</span> builder<span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">await</span> <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    ctx<span class="token punctuation">.</span>status <span class="token operator">=</span> <span class="token number">200</span> <span class="token comment">// koa defaults to 404 when it sees that status is unset</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span> reject<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      ctx<span class="token punctuation">.</span>res<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'close'</span><span class="token punctuation">,</span> resolve<span class="token punctuation">)</span>
+      ctx<span class="token punctuation">.</span>res<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'finish'</span><span class="token punctuation">,</span> resolve<span class="token punctuation">)</span>
+      nuxt<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>ctx<span class="token punctuation">.</span>req<span class="token punctuation">,</span> ctx<span class="token punctuation">.</span>res<span class="token punctuation">,</span> promise <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// nuxt.render passes a rejected promise into callback on error.</span>
+        promise<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>resolve<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span>reject<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>port<span class="token punctuation">,</span> host<span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Server listening on '</span> <span class="token operator">+</span> host <span class="token operator">+</span> <span class="token string">':'</span> <span class="token operator">+</span> port<span class="token punctuation">)</span> <span class="token comment">// eslint-disable-line no-console</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>注意：<code>nuxt/koa</code>是koa2模板，而不是使用<code>nuxt/koa2</code>,特别注意。</p></div><h2 id="全部模板初始化列表"><a href="#全部模板初始化列表" aria-hidden="true" class="header-anchor">#</a> 全部模板初始化列表</h2><p>而其实，官方也提供了更多的模板以便于我们使用，而我在<strong>中文文档</strong>并未发现有说明：</p><table><thead><tr><th>模板初始化命令</th><th>说明</th></tr></thead><tbody><tr><td><code>nuxt/starter</code></td><td>基本的Nuxt.js项目模板</td></tr><tr><td><code>nuxt/express</code></td><td>Nuxt.js+Express</td></tr><tr><td><code>nuxt/koa</code></td><td>Nuxt.js+Koa2</td></tr><tr><td><code>nuxt/adonuxt</code></td><td>Nuxt.js+AdonisJS</td></tr><tr><td><code>nuxt/micro</code></td><td>Nuxt.js+Micro</td></tr><tr><td><code>nuxt/nuxtent</code></td><td>适用于内容较重网站的Nuxt.js+Nuxtend模块</td></tr></tbody></table><h2 id="声明"><a href="#声明" aria-hidden="true" class="header-anchor">#</a> 声明</h2><h3 id="关于图片"><a href="#关于图片" aria-hidden="true" class="header-anchor">#</a> 关于图片</h3><p>本文所有涉及的图片，例如：Nuxt.js的打包方式，均使用官方图片，因为官方图片具有权威性，并非盗版及抄袭等。</p><h3 id="关于版权"><a href="#关于版权" aria-hidden="true" class="header-anchor">#</a> 关于版权</h3><p>博客采用 <strong>Evan You</strong>开发的<code>vuePress</code>快速搭建而成，版权归开发者所有，博客原创文章版权归作者所有。</p><h3 id="关于博客"><a href="#关于博客" aria-hidden="true" class="header-anchor">#</a> 关于博客</h3><p>搭建这个博客的模板就是为了记录个人学习的笔记、心得、及在使用某框架或者其他技术方面遇到的问题汇总。博客是<strong>非盈利性质</strong>，如有侵犯其他人著作权，使用权等，请及时联系邮箱：<code>cn_brian@163.com</code></p></div><!----><div class="content page-nav"><p class="inner"><!----><span class="next"><a href="/nuxt/path.html">
+          路径匹配
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/5.e9027273.js" defer></script><script src="/assets/js/app.ea5d89d8.js" defer></script>
+  </body>
+</html>
