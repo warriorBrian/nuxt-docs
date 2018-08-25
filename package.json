@@ -1,7 +1,7 @@
 {
-  "name": "demo1",
+  "name": "docs",
   "version": "1.0.0",
-  "description": "",
+  "description": "一个基于vuePress快速成型的笔记整理站点",
   "main": "index.js",
   "directories": {
     "doc": "docs"
