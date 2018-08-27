@@ -2,6 +2,7 @@
 
 ## 一个基于vuePress快速成型的笔记整理站点
 
+## 线上地址: [Docs](http://docs.brianlee.cn)
 
 ## 目录结构
 
